@@ -1,0 +1,26 @@
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dfe4e9;
+    padding: 5px 15px;
+    border-bottom: 2px solid rgb(148, 179, 191);
+
+   
+  }
+
+  p{
+   width: 50%;
+   word-wrap: break-word;
+  }
+
+ .toDoButton{
+    background-color: aliceblue;
+    margin: 0.2em;
+    padding: 0.5em;
+ }
+
+ .taskDone{
+    text-decoration: line-through;
+  }

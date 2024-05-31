@@ -1,5 +1,6 @@
 import { ToDo } from "../models/ToDo";
 import { ToDoPresentation } from "./ToDoPresentation";
+import "./ToDosPresentation.css";
 
 interface IToDosPresentationProps {
   toDos: ToDo[];

@@ -1,4 +1,5 @@
 import { ToDo } from "../models/ToDo";
+import "./ToDoPresentation.css";
 
 interface IToDoPresentationProps {
   toDo: ToDo;
@@ -15,20 +16,25 @@ export const ToDoPresentation = ({
     <>
       <li key={toDo.id}>
         <p className={toDo.isCompleted ? "taskDone" : ""}>{toDo.task}</p>
-        <button
-          onClick={() => {
-            removeTodo(toDo);
-          }}
-        >
-          Ta bort
-        </button>
-        <button
-          onClick={() => {
-            toggleCompleted(toDo);
-          }}
-        >
-          &#10004;
-        </button>
+
+        <div>
+          <button
+            className="toDoButton"
+            onClick={() => {
+              removeTodo(toDo);
+            }}
+          >
+            Ta bort
+          </button>
+          <button
+            className="toDoButton"
+            onClick={() => {
+              toggleCompleted(toDo);
+            }}
+          >
+            &#10004;
+          </button>
+        </div>
       </li>
     </>
   );
